@@ -2,8 +2,8 @@
 	"schemaVersion": 1,
 	"id": "no-pot-effect",
 	"version": "${version}",
-	"name": "No pot effect",
-	"description": "Убирает растяжение экрана (FOV distortion) от зелий скорости и замедления, чтобы ничего не мешало в PvP.",
+	"name": "No Pot Effect",
+	"description": "Убирает растяжение экрана (FOV distortion) от зелий скорости и замедления. Ничего не настраивать — просто работает.",
 	"authors": [
 		"reqwai"
 	],
@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.NoPotEffect"
+			"com.reqwai.nopoteffect.NoPotEffect"
 		],
 		"client": [
-			"com.example.client.NoPotEffectClient"
+			"com.reqwai.nopoteffect.client.NoPotEffectClient"
 		]
 	},
 	"mixins": [

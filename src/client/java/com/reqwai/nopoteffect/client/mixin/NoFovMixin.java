@@ -1,5 +1,6 @@
-package com.example.client.mixin;
+package com.reqwai.nopoteffect.client.mixin;
 
+import com.reqwai.nopoteffect.ModConfig;
 import net.minecraft.client.renderer.GameRenderer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -18,8 +19,10 @@ public class NoFovMixin {
 
     @Inject(method = "tickFov", at = @At("HEAD"), cancellable = true)
     private void onTickFov(CallbackInfo ci) {
-        this.oldFovModifier = 1.0F;
-        this.fovModifier = 1.0F;
-        ci.cancel();
+        if (ModConfig.isFovDisabled()) {
+            this.oldFovModifier = 1.0F;
+            this.fovModifier = 1.0F;
+            ci.cancel();
+        }
     }
 }
