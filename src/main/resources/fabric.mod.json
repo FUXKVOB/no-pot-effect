@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "no-pot-effect",
+	"version": "${version}",
+	"name": "No pot effect",
+	"description": "Убирает растяжение экрана (FOV distortion) от зелий скорости и замедления, чтобы ничего не мешало в PvP.",
+	"authors": [
+		"reqwai"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/no-pot-effect",
+		"sources": "https://github.com/FUXKVOB/no-pot-effect"
+	},
+	"license": "MIT",
+	"icon": "assets/no-pot-effect/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.example.NoPotEffect"
+		],
+		"client": [
+			"com.example.client.NoPotEffectClient"
+		]
+	},
+	"mixins": [
+		"no-pot-effect.mixins.json",
+		{
+			"config": "no-pot-effect.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.0",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
