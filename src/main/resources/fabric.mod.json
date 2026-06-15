@@ -3,7 +3,7 @@
 	"id": "no-pot-effect",
 	"version": "${version}",
 	"name": "No Pot Effect",
-	"description": "Убирает растяжение экрана (FOV distortion) от зелий скорости и замедления. Ничего не настраивать — просто работает.",
+	"description": "Убирает растяжение экрана от зелий, тошноту (nausea) и тряску при ударах. Всё настраивается в config/no-pot-effect.json.",
 	"authors": [
 		"reqwai"
 	],
