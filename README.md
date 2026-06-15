@@ -1,9 +1,27 @@
-# No pot effect
+# No Pot Effect
 
-## Setup
+Убирает растяжение экрана (FOV distortion) от зелий скорости и замедления. Ничего не настраивать — просто работает.
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+## Установка
 
-## License
+1. Скачай `.jar` из [релизов](https://github.com/FUXKVOB/no-pot-effect/releases) или с [Modrinth](https://modrinth.com/mod/no-pot-effect)
+2. Кинуть в `.minecraft/mods/`
+3. Запустить игру
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+## Требования
+
+- Minecraft 1.21.11
+- Fabric Loader 0.14+
+- Fabric API
+
+## Сборка
+
+```bash
+./gradlew build
+```
+
+Готовый `.jar` будет в `build/libs/`.
+
+## Лицензия
+
+MIT
